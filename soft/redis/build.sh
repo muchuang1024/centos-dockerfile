@@ -15,5 +15,5 @@ function build() {
 }
 
 download
-install
+build
 cp -rf ./conf ./data ./log ./control.sh ./README.md $installRoot
