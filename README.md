@@ -3,7 +3,7 @@
 ### 集成软件
 
 - [x] redis单机多实例
-- [x] sentinel高可集群
+- [x] sentinel高可用集群
 - [x] zookeeper单机伪集群
 
 
