@@ -57,7 +57,8 @@
 
 ### 如何使用
 ```
-docker run -itd --name centos image_id
+docker build . -t centos:latest
+docker run --name centos -itd image_id
 docker exec -it container_id bash
 ```
 
