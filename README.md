@@ -58,7 +58,8 @@
 ### 如何使用
 ```
 docker build . -t centos:latest
-docker run --name centos -itd image_id
+# 容器代码目录/home/webroot挂载到宿主机目录/yours/code
+docker run --name centos -v /yours/code:/home/webroot -itd image_id
 docker exec -it container_id bash
-```
+```	
 
