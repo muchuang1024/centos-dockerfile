@@ -5,12 +5,14 @@
 - [x] redis单机多实例
 - [x] sentinel高可用集群
 - [x] zookeeper单机伪集群
+- [x] mysql
+- [x] go
 
 ### 软件一览
 
 > 默认安装目录: /home，包含如下文件
 
-- build.sh构建软件环境
+- build.sh 构建软件环境
 - control.sh start 启动软件
 - conf 配置文件目录
 - data 数据目录
