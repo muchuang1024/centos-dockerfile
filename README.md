@@ -1,12 +1,11 @@
 # 个人centos开发环境镜像
 
-### 集成软件
+### 镜像内容
 
 - [x] redis单机多实例
 - [x] sentinel高可用集群
 - [x] zookeeper单机伪集群
 - [x] mysql
-- [x] go
 
 ### 软件一览
 
@@ -60,8 +59,7 @@
 ### 如何使用
 ```
 docker build . -t centos:latest
-# 容器代码目录/home/webroot挂载到宿主机目录/yours/code
-docker run --name centos -v /yours/code:/home/webroot -itd image_id
-docker exec -it container_id bash
+docker run --name centos -p 6379:6379 -p 6380:6380  -p 26379:26379 -p 26380:26380 -p 26381:26381 -itd [image_id]
+docker exec -it centos bash
 ```	
 
