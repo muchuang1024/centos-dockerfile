@@ -59,7 +59,7 @@
 ### 如何使用
 ```
 docker build . -t centos:latest
-docker run --name centos -p 6379:6379 -p 6380:6380  -p 26379:26379 -p 26380:26380 -p 26381:26381 -itd [image_id]
+docker run --name centos -v /Users/caijinlin/Data:/data -p 3306:3306 -p 6379:6379 -p 6380:6380  -p 26379:26379 -p 26380:26380 -p 26381:26381 -itd [image_id]
 docker exec -it centos bash
 ```	
 
