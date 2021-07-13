@@ -9,7 +9,7 @@ function download() {
 }
 
 function install() {
-	cp -R zookeeper-${version} $installRoot
+	 mkdir $installRoot && cp -R zookeeper-${version} $installRoot
 }
 
 download
